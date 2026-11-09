@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haven & Crest Realty | Boutique Luxury Real Estate & Private Advisory</title>
+  <meta name="description" content="Haven & Crest Realty is a premier luxury real estate agency providing bespoke residential sales, acquisitions, and private portfolio advisory across premier global enclaves.">
+  <meta property="og:title" content="Haven & Crest Realty | Luxury Estates & Private Advisory">
+  <meta property="og:description" content="Find a home that feels like yours. Exceptional architecture and discreet representation across the world's most coveted sanctuaries.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Favicon: Gold Architectural Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B1F3A'/%3E%3Cpath d='M8 24V8h4l4 8 4-8h4v16h-3.5V13l-3.5 7h-2l-3.5-7v11H8z' fill='%23C8A15A'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Shared Global Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="index.html" class="brand" aria-label="Haven and Crest Realty - Home">
+        Haven<span class="brand-ampersand">&amp;</span>Crest
+        <span class="brand-realty">Realty</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Primary Action & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <a href="contact.html#contact-form" class="btn btn-primary btn-sm">Book a Viewing</a>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileOverlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-contact-info">
+      <p>Private Advisory Concierge</p>
+      <a href="tel:3108439200">(310) 843-9200</a>
+      <p>450 North Canon Drive, Beverly Hills, CA</p>
+      <div style="margin-top: 1.5rem;">
+        <a href="contact.html#contact-form" class="btn btn-primary btn-full">Book Private Viewing</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Page Content -->
+  <main id="main-content">
+
+    <!-- Section 1: Hero -->
+    <section class="hero" aria-label="Welcome to Haven & Crest Realty">
+      <div class="hero-media">
+        <img 
+          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80" 
+          alt="Breathtaking architectural modern luxury residence at sunset with illuminated lap pool and glass pavilion"
+          loading="eager"
+          decoding="async"
+        >
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text-block">
+          <span class="kicker">Boutique Luxury Real Estate</span>
+          <h1 class="headline-xl hero-title">Find a Home That Feels Like Yours.</h1>
+          <p class="hero-subtitle">
+            Bespoke representation, trusted advisory, and confidential access to the world’s most coveted residences for buyers, sellers, and discerning investors.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#featured-properties" class="btn btn-primary btn-lg">Browse Properties</a>
+            <a href="contact.html" class="btn btn-secondary-light btn-lg">Talk to an Agent</a>
+          </div>
+        </div>
+
+        <!-- Hero Search Bar Card -->
+        <div class="hero-search-card">
+          <form class="search-form" id="heroSearchForm" action="contact.html" method="GET">
+            <div class="search-field">
+              <label for="searchLocation">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Location
+              </label>
+              <select id="searchLocation" name="location">
+                <option value="all">All Premier Locations</option>
+                <option value="bel-air">Bel Air & Beverly Hills, CA</option>
+                <option value="malibu">Malibu Coast, CA</option>
+                <option value="manhattan">Tribeca & Manhattan, NY</option>
+                <option value="aspen">Aspen & Red Mountain, CO</option>
+                <option value="miami">Biscayne Bay & Coral Gables, FL</option>
+                <option value="san-francisco">Pacific Heights, San Francisco, CA</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label for="searchType">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Property Type
+              </label>
+              <select id="searchType" name="type">
+                <option value="all">All Residence Types</option>
+                <option value="estate">Private Architectural Estate</option>
+                <option value="waterfront">Waterfront & Coastal Villa</option>
+                <option value="penthouse">Sky Penthouse & Duplex</option>
+                <option value="chalet">Alpine Mountain Chalet</option>
+                <option value="historic">Historic Neoclassical Manor</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label for="searchPrice">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path>
+                </svg>
+                Price Range
+              </label>
+              <select id="searchPrice" name="price">
+                <option value="all">Any Price Range</option>
+                <option value="2-5m">$2,000,000 - $5,000,000</option>
+                <option value="5-10m">$5,000,000 - $10,000,000</option>
+                <option value="10-20m">$10,000,000 - $20,000,000</option>
+                <option value="20m+">$20,000,000+</option>
+                <option value="lease">Executive Lease ($20k+/mo)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary search-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <span>Find Properties</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Trust Bar & Performance Metrics -->
+    <section class="trust-bar" aria-label="Key Agency Milestones">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal-fade-up">
+            <span class="stat-number" data-target="1200" data-suffix="+">0<span class="stat-suffix">+</span></span>
+            <span class="stat-label">Luxury Homes Sold</span>
+          </div>
+          <div class="stat-item reveal-fade-up">
+            <span class="stat-number" data-target="15" data-suffix=" Yrs">0<span class="stat-suffix"> Yrs</span></span>
+            <span class="stat-label">Years of Fiduciary Experience</span>
+          </div>
+          <div class="stat-item reveal-fade-up">
+            <span class="stat-number" data-target="98" data-suffix="%">0<span class="stat-suffix">%</span></span>
+            <span class="stat-label">Client Satisfaction & Repeat Rate</span>
+          </div>
+          <div class="stat-item reveal-fade-up">
+            <span class="stat-number" data-target="40" data-suffix="+">0<span class="stat-suffix">+</span></span>
+            <span class="stat-label">Expert Managing Agents</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Featured Properties -->
+    <section id="featured-properties" class="section-padding bg-ivory" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header text-center reveal-fade-up">
+          <span class="kicker">Curated Portfolio</span>
+          <h2 id="featured-heading" class="headline-lg">Featured Luxury Residences</h2>
+          <p class="lead-p">
+            Explore our hand-selected collection of architectural masterpieces, prime coastal estates, and sky residences available for acquisition and private lease.
+          </p>
+        </div>
+
+        <div class="properties-grid">
+          <!-- Property 1 -->
+          <article class="property-card reveal-fade-up">
+            <div class="property-card-media">
+              <span class="property-badge">For Sale</span>
+              <img 
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+                alt="The Bel Air Promontory luxury estate with private motor court"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="property-card-body">
+              <div class="property-price">$18,750,000</div>
+              <h3 class="property-title">The Bel Air Promontory</h3>
+              <p class="property-location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Bel Air, Los Angeles, CA
+              </p>
+              <div class="property-features">
+                <span class="property-feat-item" title="Bedrooms">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 19h20M2 5v14M22 5v14M2 9h20M6 9V5M18 9V5"></path>
+                  </svg>
+                  6 Beds
+                </span>
+                <span class="property-feat-item" title="Bathrooms">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M6 12V5a2 2 0 012-2h3v9M18 12V9a2 2 0 00-2-2h-2"></path>
+                  </svg>
+                  8 Baths
+                </span>
+                <span class="property-feat-item" title="Interior Area">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  </svg>
+                  9,450 Sq Ft
+                </span>
+              </div>
+              <div class="property-card-footer">
+                <button class="view-details-btn" data-property-id="1">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 2 -->
+          <article class="property-card reveal-fade-up">
+            <div class="property-card-media">
+              <span class="property-badge">For Sale</span>
+              <img 
+                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" 
+                alt="Solstice Ocean Villa in Malibu with infinity pool overlooking ocean"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="property-card-body">
+              <div class="property-price">$14,200,000</div>
+              <h3 class="property-title">Solstice Ocean Villa</h3>
+              <p class="property-location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Malibu Coast, CA
+              </p>
+              <div class="property-features">
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 19h20M2 5v14M22 5v14M2 9h20M6 9V5M18 9V5"></path>
+                  </svg>
+                  5 Beds
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M6 12V5a2 2 0 012-2h3v9M18 12V9a2 2 0 00-2-2h-2"></path>
+                  </svg>
+                  6 Baths
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  </svg>
+                  7,100 Sq Ft
+                </span>
+              </div>
+              <div class="property-card-footer">
+                <button class="view-details-btn" data-property-id="2">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 3 -->
+          <article class="property-card reveal-fade-up">
+            <div class="property-card-media">
+              <span class="property-badge badge-rent">For Rent</span>
+              <img 
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" 
+                alt="The Tribeca Sky Loft duplex interior with high loft ceilings"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="property-card-body">
+              <div class="property-price">$32,000 <span style="font-size: 0.95rem; font-weight: 400; color: var(--color-charcoal-muted);">/ mo</span></div>
+              <h3 class="property-title">The Tribeca Sky Loft</h3>
+              <p class="property-location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Tribeca, Manhattan, NY
+              </p>
+              <div class="property-features">
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 19h20M2 5v14M22 5v14M2 9h20M6 9V5M18 9V5"></path>
+                  </svg>
+                  4 Beds
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M6 12V5a2 2 0 012-2h3v9M18 12V9a2 2 0 00-2-2h-2"></path>
+                  </svg>
+                  4.5 Baths
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  </svg>
+                  4,800 Sq Ft
+                </span>
+              </div>
+              <div class="property-card-footer">
+                <button class="view-details-btn" data-property-id="3">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 4 -->
+          <article class="property-card reveal-fade-up">
+            <div class="property-card-media">
+              <span class="property-badge">For Sale</span>
+              <img 
+                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" 
+                alt="Aspen Pinecrest Chalet surrounded by snowy pines and alpine ridges"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="property-card-body">
+              <div class="property-price">$22,500,000</div>
+              <h3 class="property-title">Aspen Pinecrest Chalet</h3>
+              <p class="property-location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Red Mountain, Aspen, CO
+              </p>
+              <div class="property-features">
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 19h20M2 5v14M22 5v14M2 9h20M6 9V5M18 9V5"></path>
+                  </svg>
+                  7 Beds
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M6 12V5a2 2 0 012-2h3v9M18 12V9a2 2 0 00-2-2h-2"></path>
+                  </svg>
+                  8.5 Baths
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  </svg>
+                  11,200 Sq Ft
+                </span>
+              </div>
+              <div class="property-card-footer">
+                <button class="view-details-btn" data-property-id="4">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 5 -->
+          <article class="property-card reveal-fade-up">
+            <div class="property-card-media">
+              <span class="property-badge">For Sale</span>
+              <img 
+                src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80" 
+                alt="Biscayne Bay Waterfront Estate with modern poolside terrace and palm trees"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="property-card-body">
+              <div class="property-price">$16,900,000</div>
+              <h3 class="property-title">Biscayne Bay Waterfront</h3>
+              <p class="property-location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Coral Gables, FL
+              </p>
+              <div class="property-features">
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 19h20M2 5v14M22 5v14M2 9h20M6 9V5M18 9V5"></path>
+                  </svg>
+                  6 Beds
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M6 12V5a2 2 0 012-2h3v9M18 12V9a2 2 0 00-2-2h-2"></path>
+                  </svg>
+                  7 Baths
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  </svg>
+                  8,600 Sq Ft
+                </span>
+              </div>
+              <div class="property-card-footer">
+                <button class="view-details-btn" data-property-id="5">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 6 -->
+          <article class="property-card reveal-fade-up">
+            <div class="property-card-media">
+              <span class="property-badge badge-rent">For Rent</span>
+              <img 
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" 
+                alt="The Pacific Heights Manor exterior facade and bay view terrace"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="property-card-body">
+              <div class="property-price">$28,500 <span style="font-size: 0.95rem; font-weight: 400; color: var(--color-charcoal-muted);">/ mo</span></div>
+              <h3 class="property-title">The Pacific Heights Manor</h3>
+              <p class="property-location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Pacific Heights, San Francisco, CA
+              </p>
+              <div class="property-features">
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 19h20M2 5v14M22 5v14M2 9h20M6 9V5M18 9V5"></path>
+                  </svg>
+                  5 Beds
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M6 12V5a2 2 0 012-2h3v9M18 12V9a2 2 0 00-2-2h-2"></path>
+                  </svg>
+                  5.5 Baths
+                </span>
+                <span class="property-feat-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  </svg>
+                  6,300 Sq Ft
+                </span>
+              </div>
+              <div class="property-card-footer">
+                <button class="view-details-btn" data-property-id="6">
+                  <span>View Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Why Choose Us -->
+    <section class="section-padding bg-stone" id="why-us" aria-labelledby="why-us-heading">
+      <div class="container">
+        <div class="section-header text-center reveal-fade-up">
+          <span class="kicker">The Haven &amp; Crest Distinction</span>
+          <h2 id="why-us-heading" class="headline-lg">Why Discerning Clients Trust Us</h2>
+          <p class="lead-p">
+            We operate at the intersection of institutional analytical rigor and boutique private hospitality, protecting your capital and privacy at every turn.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal-fade-up">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-title">Hyper-Local Mastery</h3>
+            <p class="feature-desc">
+              Exclusive access to private off-market residences and historical transaction data that never surfaces on public portals or public MLS feeds.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-fade-up">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Transparent Fiduciary Advisory</h3>
+            <p class="feature-desc">
+              Zero conflicting agendas. We provide unvarnished valuation intelligence, structural audits, and clear fee breakdowns before you commit.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-fade-up">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">End-to-End Concierge</h3>
+            <p class="feature-desc">
+              From architectural staging and drone cinematography to legal escrow coordination, private banking introductions, and turnkey move-in.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-fade-up">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Superior Negotiation Strength</h3>
+            <p class="feature-desc">
+              Decades of closing high-stakes luxury transactions. We consistently secure favorable contract terms, contingencies, and optimal capital preservation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: How It Works -->
+    <section class="section-padding bg-ivory" id="how-it-works" aria-labelledby="how-it-works-heading">
+      <div class="container">
+        <div class="section-header text-center reveal-fade-up">
+          <span class="kicker">Streamlined Advisory</span>
+          <h2 id="how-it-works-heading" class="headline-lg">How We Guide Your Next Chapter</h2>
+          <p class="lead-p">
+            A structured, three-step methodology built around complete confidentiality, time efficiency, and precise aesthetic alignment.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal-fade-up">
+            <div class="step-indicator">
+              <div class="step-number">01</div>
+              <div class="step-line"></div>
+            </div>
+            <h3 class="step-title">Confidential Consultation</h3>
+            <p class="step-desc">
+              We begin with an in-depth lifestyle and financial briefing to define your architectural criteria, spatial requirements, tax considerations, and acquisition timeline.
+            </p>
+          </div>
+
+          <div class="process-step reveal-fade-up">
+            <div class="step-indicator">
+              <div class="step-number">02</div>
+              <div class="step-line"></div>
+            </div>
+            <h3 class="step-title">Curated Property Matching</h3>
+            <p class="step-desc">
+              Our partners curate private viewing dossiers including pocket listings, off-market estates, and detailed comparative yield models tailored exclusively to you.
+            </p>
+          </div>
+
+          <div class="process-step reveal-fade-up">
+            <div class="step-indicator">
+              <div class="step-number">03</div>
+            </div>
+            <h3 class="step-title">Seamless Acquisition &amp; Handover</h3>
+            <p class="step-desc">
+              We orchestrate contract drafting, environmental diligence, escrow management, and estate key turnover with zero friction and absolute discretion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Testimonials -->
+    <section class="section-padding bg-stone" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header text-center reveal-fade-up">
+          <span class="kicker">Client Accolades</span>
+          <h2 id="testimonials-heading" class="headline-lg">Trusted by Leaders &amp; Visionaries</h2>
+          <p class="lead-p">
+            Genuine experiences from clients who entrusted Haven &amp; Crest with their most significant property decisions.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card reveal-fade-up">
+            <div>
+              <div class="rating-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                “Haven &amp; Crest secured our mid-century architectural estate in Bel Air before it ever appeared on public MLS. Their valuation precision and discretion made a multi-million dollar closing feel completely effortless.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Elena Vance" loading="lazy">
+              </div>
+              <div class="author-info">
+                <h4>Elena &amp; Marcus Vance</h4>
+                <p>Venture Partner &amp; Architect · Bel Air Acquisition</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card reveal-fade-up">
+            <div>
+              <div class="rating-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                “Their marketing collateral reads like an architectural monograph. Our Tribeca penthouse sold within 21 days at 99.4% of asking price, with zero unnecessary public showings and full respect for our privacy.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Julian Sterling" loading="lazy">
+              </div>
+              <div class="author-info">
+                <h4>Julian Sterling</h4>
+                <p>Principal, Sterling Capital · Tribeca Disposition</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card reveal-fade-up">
+            <div>
+              <div class="rating-stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p class="testimonial-quote">
+                “The team’s structural diligence on our Aspen property uncovered zoning opportunities that substantially elevated our investment value. They operate on an intellectual plane far above conventional brokers.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Dr. Aris Thorne" loading="lazy">
+              </div>
+              <div class="author-info">
+                <h4>Dr. Aris Thorne</h4>
+                <p>Biotech Founder · Aspen Estate Acquisition</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Call-To-Action Banner -->
+    <section class="cta-banner" aria-label="Book a consultation">
+      <div class="container">
+        <div class="cta-inner reveal-fade-up">
+          <span class="kicker">Confidential Advisory</span>
+          <h2 class="headline-lg cta-title">Ready to Discuss Your Next Acquisition or Sale?</h2>
+          <p class="cta-desc">
+            Connect with our managing brokers for an unhurried, private conversation regarding your real estate aspirations or portfolio positioning.
+          </p>
+          <div class="cta-buttons">
+            <a href="contact.html#contact-form" class="btn btn-primary btn-lg">Book a Free Consultation</a>
+            <a href="services.html" class="btn btn-secondary-light btn-lg">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Property Detail Modal -->
+  <div class="modal-backdrop" id="propertyModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalPropertyTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close property details modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-media">
+        <img id="modalPropertyImg" src="" alt="Property detail photo">
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-price-badge-row">
+          <div class="modal-price" id="modalPropertyPrice">$0</div>
+          <span class="property-badge" id="modalPropertyStatus">For Sale</span>
+        </div>
+
+        <h3 class="headline-md" id="modalPropertyTitle">Property Title</h3>
+        <p class="property-location" style="margin-bottom: 1rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span id="modalPropertyLocation">Location</span>
+        </p>
+
+        <div class="modal-specs-bar">
+          <div class="modal-spec-item">
+            <strong id="modalPropertyBeds">-</strong>
+            <span>Bedrooms</span>
+          </div>
+          <div class="modal-spec-item">
+            <strong id="modalPropertyBaths">-</strong>
+            <span>Bathrooms</span>
+          </div>
+          <div class="modal-spec-item">
+            <strong id="modalPropertySqft">-</strong>
+            <span>Interior Area</span>
+          </div>
+          <div class="modal-spec-item">
+            <strong id="modalPropertyYear">-</strong>
+            <span>Completed</span>
+          </div>
+        </div>
+
+        <div class="modal-description">
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--color-navy);">Architectural Highlights &amp; Overview</h4>
+          <p id="modalPropertyDesc" style="color: var(--color-charcoal-muted); line-height: 1.7; font-size: 0.95rem;">
+            Property overview text...
+          </p>
+        </div>
+
+        <div class="modal-actions">
+          <a href="contact.html" id="modalInquireBtn" class="btn btn-primary btn-full">Inquire for Private Showing</a>
+          <button type="button" class="btn btn-outline-navy btn-full" onclick="document.querySelector('#propertyModal').click()">Close Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Brand & Tagline -->
+        <div class="footer-brand-col">
+          <a href="index.html#main-content" class="brand" aria-label="Haven and Crest Realty - Home">
+            Haven<span class="brand-ampersand">&amp;</span>Crest
+            <span class="brand-realty">Realty</span>
+          </a>
+          <p>
+            Curating extraordinary properties and bespoke real estate experiences across premier coastal and urban sanctuaries.
+          </p>
+          <div class="social-links-bar" aria-label="Haven and Crest Social Media">
+            <a href="https://instagram.com" class="social-link" aria-label="Haven & Crest on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="social-link" aria-label="Haven & Crest on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://x.com" class="social-link" aria-label="Haven & Crest on X" target="_blank" rel="noopener noreferrer">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="social-link" aria-label="Haven & Crest on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html#contact-form" class="btn btn-primary btn-sm">Book a Viewing</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Portfolio &amp; Agency</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#featured-properties">Featured Portfolio</a></li>
+            <li><a href="index.html#heroSearchForm">Property Search Filter</a></li>
+            <li><a href="index.html#why-us">Why Choose Us</a></li>
+            <li><a href="index.html#how-it-works">Advisory Methodology</a></li>
+            <li><a href="index.html#testimonials">Client Testimonials</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Advisory -->
+        <div>
+          <h4 class="footer-col-title">Services &amp; Advisory</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#services-detail">Core Capabilities</a></li>
+            <li><a href="services.html#timeline">Process Timeline</a></li>
+            <li><a href="services.html#engagement">Engagement Transparency</a></li>
+            <li><a href="services.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html#advisory-team">Senior Advisory Partners</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Private Office & Journal -->
+        <div>
+          <h4 class="footer-col-title">Private Office</h4>
+          <ul class="footer-contact-items" style="margin-bottom: 1.5rem;">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <a href="contact.html#office-map" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;" title="View Beverly Hills flagship map and directions">
+                450 North Canon Drive<br>Beverly Hills, CA 90210
+              </a>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+              </svg>
+              <a href="tel:3108439200" style="color: inherit;">(310) 843-9200</a>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:concierge@havenandcrest.com" style="color: inherit;">concierge@havenandcrest.com</a>
+            </li>
+          </ul>
+
+          <h5 style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-gold); margin-bottom: 0.5rem;">
+            Private Journal
+          </h5>
+          <form class="newsletter-form" novalidate>
+            <input type="email" class="newsletter-input" placeholder="Your email address" aria-label="Email for private journal newsletter" required>
+            <button type="submit" class="btn btn-primary btn-sm" aria-label="Subscribe to newsletter">Join</button>
+          </form>
+          <div class="newsletter-feedback" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Haven &amp; Crest Realty LLC. All Rights Reserved. Equal Housing Opportunity.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html#privacy-policy">Privacy Policy</a>
+          <a href="contact.html#terms-of-representation">Terms of Representation</a>
+          <a href="contact.html#accessibility-statement">Accessibility Statement</a>
+          <a href="contact.html#office-map">Location &amp; Valet</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Scroll back to top of page">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Global Shared Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>

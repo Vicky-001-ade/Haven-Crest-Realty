@@ -1,0 +1,6 @@
+{
+  "name": "Haven & Crest Realty",
+  "description": "Boutique luxury real estate agency providing premier residential acquisitions, sales, and bespoke advisory services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

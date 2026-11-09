@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Our Private Advisory Office | Haven & Crest Realty</title>
+  <meta name="description" content="Connect with Haven & Crest Realty's senior managing partners. Schedule private viewings, discuss confidential property sales, or request portfolio valuations.">
+  <meta property="og:title" content="Let's Find Your Next Move | Haven & Crest Realty">
+  <meta property="og:description" content="Private consultations, estate viewings, and confidential market valuations. Beverly Hills flagship office.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Favicon: Gold Architectural Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B1F3A'/%3E%3Cpath d='M8 24V8h4l4 8 4-8h4v16h-3.5V13l-3.5 7h-2l-3.5-7v11H8z' fill='%23C8A15A'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Shared Global Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header (solid on secondary pages) -->
+  <header class="site-header solid-header" role="banner">
+    <div class="container header-inner">
+      <!-- Zone 1: Brand Wordmark -->
+      <a href="index.html" class="brand" aria-label="Haven and Crest Realty - Home">
+        Haven<span class="brand-ampersand">&amp;</span>Crest
+        <span class="brand-realty">Realty</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Primary Action & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <a href="#contact-form" class="btn btn-primary btn-sm">Book a Viewing</a>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileOverlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active" aria-current="page">Contact Us</a></li>
+    </ul>
+    <div class="mobile-contact-info">
+      <p>Private Advisory Concierge</p>
+      <a href="tel:3108439200">(310) 843-9200</a>
+      <p>450 North Canon Drive, Beverly Hills, CA</p>
+      <div style="margin-top: 1.5rem;">
+        <a href="#contact-form" class="btn btn-primary btn-full">Book Private Viewing</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Page Content -->
+  <main id="main-content">
+
+    <!-- Page Banner Hero -->
+    <section class="page-hero" aria-label="Contact Header">
+      <div class="page-hero-bg">
+        <img 
+          src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80" 
+          alt="Modern luxury executive boardroom and architectural advisory suite"
+          loading="eager"
+          decoding="async"
+        >
+      </div>
+      <div class="page-hero-overlay"></div>
+
+      <div class="container page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">Contact Us</span>
+        </nav>
+        <span class="kicker">Confidential Engagement</span>
+        <h1 class="headline-xl" style="color: var(--color-white); margin-bottom: 1rem;">
+          Let's Find Your Next Move.
+        </h1>
+        <p class="lead-p" style="color: rgba(255, 255, 255, 0.85); max-width: 56ch;">
+          Whether inquiring about an active listing, exploring a discreet disposition, or seeking comprehensive portfolio stewardship, our managing brokers are ready to advise you.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 1: Contact Form & Info Split -->
+    <section class="section-padding bg-ivory" aria-label="Contact options and inquiry form">
+      <div class="container">
+        <div class="contact-split-grid">
+          
+          <!-- Column 1: Interactive Inquiry Form -->
+          <div class="contact-form-card reveal-fade-up" id="contact-form">
+            <div class="form-header">
+              <span class="kicker">Inquiry Form</span>
+              <h2>Send a Confidential Message</h2>
+              <p style="color: var(--color-charcoal-muted); font-size: 0.95rem;">
+                All inquiries are treated with strict confidentiality. A managing broker will review your request and respond within two business hours.
+              </p>
+            </div>
+
+            <!-- The Form -->
+            <form id="contactForm" novalidate>
+              <div class="form-grid">
+                
+                <!-- Full Name -->
+                <div class="form-field" id="field-name">
+                  <label for="formName">Full Name <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" id="formName" class="form-control" placeholder="e.g., Alexandra Sterling" required autocomplete="name">
+                  <span class="form-error-msg" id="error-name" role="alert"></span>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-field" id="field-email">
+                  <label for="formEmail">Email Address <span class="req" aria-hidden="true">*</span></label>
+                  <input type="email" id="formEmail" class="form-control" placeholder="e.g., alexandra@domain.com" required autocomplete="email">
+                  <span class="form-error-msg" id="error-email" role="alert"></span>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-field" id="field-phone">
+                  <label for="formPhone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+                  <input type="tel" id="formPhone" class="form-control" placeholder="(310) 000-0000" required autocomplete="tel">
+                  <span class="form-error-msg" id="error-phone" role="alert"></span>
+                </div>
+
+                <!-- Interest Dropdown -->
+                <div class="form-field" id="field-interest">
+                  <label for="formInterest">I'm interested in <span class="req" aria-hidden="true">*</span></label>
+                  <select id="formInterest" class="form-control" required>
+                    <option value="" disabled selected>Please select an option</option>
+                    <option value="Buying">Buying a Luxury Residence</option>
+                    <option value="Selling">Selling an Architectural Estate</option>
+                    <option value="Renting">Executive Leasing &amp; Rentals</option>
+                    <option value="Property Management">Turnkey Property Management</option>
+                    <option value="Valuation">Valuation &amp; Market Appraisal</option>
+                    <option value="Investment Advisory">Investment &amp; 1031 Exchange</option>
+                  </select>
+                  <span class="form-error-msg" id="error-interest" role="alert"></span>
+                </div>
+
+                <!-- Message -->
+                <div class="form-field form-group-full" id="field-message">
+                  <label for="formMessage">Message &amp; Requirements <span class="req" aria-hidden="true">*</span></label>
+                  <textarea id="formMessage" class="form-control" rows="4" placeholder="Please share details regarding your preferred geographic location, architectural preferences, or specific property of interest..." required></textarea>
+                  <span class="form-error-msg" id="error-message" role="alert"></span>
+                </div>
+
+                <!-- Consent Checkbox -->
+                <div class="form-field form-group-full" id="field-consent">
+                  <label class="form-checkbox-label">
+                    <input type="checkbox" id="formConsent" required>
+                    <span>I agree to receive communications regarding Haven &amp; Crest listings and services. Client privacy is strictly respected under our non-disclosure standards. <span class="req" aria-hidden="true">*</span></span>
+                  </label>
+                  <span class="form-error-msg" id="error-consent" role="alert"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group-full" style="margin-top: 0.5rem;">
+                  <button type="submit" id="formSubmitBtn" class="btn btn-primary btn-full btn-lg">
+                    <span>Send Confidential Message</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+            <!-- Success Confirmation Card (Replaces form upon submission) -->
+            <div class="form-success-card" id="formSuccessCard" role="status" aria-live="polite">
+              <div class="success-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="headline-md" style="margin-bottom: 0.5rem; color: var(--color-navy);">
+                Inquiry Received, <span id="successClientName">Client</span>.
+              </h3>
+              <p style="color: var(--color-charcoal-muted); max-width: 44ch; margin-bottom: 1.75rem; line-height: 1.7;">
+                Thank you for contacting Haven &amp; Crest. A managing partner has been assigned to your inquiry and will reach out via your preferred method within two business hours.
+              </p>
+              <button type="button" id="resetFormBtn" class="btn btn-outline-navy btn-sm">
+                Send Another Message
+              </button>
+            </div>
+          </div>
+
+          <!-- Column 2: Contact Info Card -->
+          <aside class="contact-info-card reveal-fade-up" aria-label="Office details">
+            <div class="contact-info-header">
+              <span class="kicker">Beverly Hills Flagship</span>
+              <h3>Private Office &amp; Salon</h3>
+              <p>
+                Our private advisory salon is situated in the golden triangle of Beverly Hills, offering discreet parking and private consultation suites.
+              </p>
+            </div>
+
+            <div class="contact-details-list">
+              <!-- Address -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Address</h4>
+                  <p>450 North Canon Drive<br>Beverly Hills, CA 90210</p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Telephone &amp; Desk</h4>
+                  <p><a href="tel:3108439200">(310) 843-9200</a></p>
+                  <p style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.65);">Direct lines to managing partners available upon engagement.</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Email Concierge</h4>
+                  <p><a href="mailto:concierge@havenandcrest.com">concierge@havenandcrest.com</a></p>
+                </div>
+              </div>
+
+              <!-- Hours -->
+              <div class="contact-detail-item">
+                <div class="contact-icon-circle">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Salon Hours</h4>
+                  <p>Monday – Friday: 8:00 AM – 7:00 PM</p>
+                  <p>Saturday: 9:00 AM – 5:00 PM</p>
+                  <p>Sunday: By Private Appointment</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div style="border-top: 1px solid var(--border-dark-subtle); padding-top: 1.5rem;">
+              <h4 style="font-size: 0.825rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold-light); margin-bottom: 0.75rem;">
+                Connect On Private Channels
+              </h4>
+              <div class="social-links-bar">
+                <a href="https://instagram.com" class="social-link" aria-label="Haven & Crest on Instagram" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" class="social-link" aria-label="Haven & Crest on LinkedIn" target="_blank" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://x.com" class="social-link" aria-label="Haven & Crest on X" target="_blank" rel="noopener noreferrer">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+        <!-- Section 2: Embedded Styled Map -->
+        <div class="map-section reveal-fade-up" id="office-map">
+          <iframe 
+            src="https://maps.google.com/maps?q=450+N+Canon+Dr,+Beverly+Hills,+CA+90210&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            title="Google Map location of Haven & Crest Realty Beverly Hills Flagship Office"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-overlay-badge">
+            <h4>Beverly Hills Flagship Office</h4>
+            <p>450 North Canon Drive, Beverly Hills, CA 90210</p>
+            <p style="margin-top: 0.35rem; font-size: 0.775rem; color: var(--color-gold-light);">
+              * Complimentary private underground valet parking available via North Canon Dr entrance.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Meet Our Team Strip -->
+    <section class="section-padding bg-stone" id="advisory-team" aria-labelledby="team-heading">
+      <div class="container">
+        <div class="section-header text-center reveal-fade-up">
+          <span class="kicker">Managing Partners</span>
+          <h2 id="team-heading" class="headline-lg">Meet Our Senior Advisory Partners</h2>
+          <p class="lead-p">
+            Distinguished brokers with proven fiduciary track records in major luxury enclaves nationwide.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Agent 1 -->
+          <article class="team-card reveal-fade-up">
+            <div class="team-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
+                alt="Victoria Sterling portrait"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-name">Victoria Sterling</h3>
+              <p class="team-title">Founding Partner &amp; Managing Broker</p>
+              <div class="team-contacts">
+                <a href="tel:3108439201">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                  </svg>
+                  (310) 843-9201
+                </a>
+                <a href="mailto:v.sterling@havenandcrest.com">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  v.sterling@havenandcrest.com
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Agent 2 -->
+          <article class="team-card reveal-fade-up">
+            <div class="team-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" 
+                alt="Alistair Vance portrait"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-name">Alistair Vance</h3>
+              <p class="team-title">Senior Vice President, Prime Estates</p>
+              <div class="team-contacts">
+                <a href="tel:3108439204">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                  </svg>
+                  (310) 843-9204
+                </a>
+                <a href="mailto:a.vance@havenandcrest.com">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  a.vance@havenandcrest.com
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Agent 3 -->
+          <article class="team-card reveal-fade-up">
+            <div class="team-card-media">
+              <img 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" 
+                alt="Claire Chen-Montgomery portrait"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-name">Claire Chen-Montgomery</h3>
+              <p class="team-title">Director of Acquisitions &amp; Valuation</p>
+              <div class="team-contacts">
+                <a href="tel:3108439208">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                  </svg>
+                  (310) 843-9208
+                </a>
+                <a href="mailto:c.chen@havenandcrest.com">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  c.chen@havenandcrest.com
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Legal Commitments, Representation Terms & Accessibility -->
+    <section id="legal-policies" class="section-padding bg-ivory" aria-labelledby="legal-heading">
+      <div class="container">
+        <div class="section-header text-center reveal-fade-up">
+          <span class="kicker">Fiduciary Governance</span>
+          <h2 id="legal-heading" class="headline-lg">Client Governance &amp; Legal Policies</h2>
+          <p class="lead-p">
+            Uncompromising standards of discretion, regulatory compliance, and digital accessibility across all client interactions.
+          </p>
+        </div>
+
+        <div class="legal-grid">
+          <!-- Policy 1: Privacy Policy -->
+          <article class="legal-card reveal-fade-up" id="privacy-policy">
+            <div class="legal-card-header">
+              <div class="legal-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="legal-card-title">Client Privacy Policy</h3>
+            </div>
+            <p class="legal-card-text">
+              Haven &amp; Crest operates under strict confidentiality protocols. We never sell, monetize, or publicly disclose client identifiers, financial holdings, or acquisition inquiries.
+            </p>
+            <ul class="legal-card-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Encrypted end-to-end communication channels
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Blind trust and entity representation protocol
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Strict non-disclosure agreement (NDA) enforcement
+              </li>
+            </ul>
+          </article>
+
+          <!-- Policy 2: Terms of Representation -->
+          <article class="legal-card reveal-fade-up" id="terms-of-representation">
+            <div class="legal-card-header">
+              <div class="legal-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="legal-card-title">Terms of Representation</h3>
+            </div>
+            <p class="legal-card-text">
+              Our agency advisory agreements conform to the highest California and National Association of Realtors fiduciary standards, ensuring absolute loyalty and disclosure.
+            </p>
+            <ul class="legal-card-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Transparent, mutually agreed commission schedules
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Zero conflicts of interest in dual-agency transactions
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Equal Housing Opportunity compliance in all marketing
+              </li>
+            </ul>
+          </article>
+
+          <!-- Policy 3: Accessibility Statement -->
+          <article class="legal-card reveal-fade-up" id="accessibility-statement">
+            <div class="legal-card-header">
+              <div class="legal-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <h3 class="legal-card-title">Accessibility Statement</h3>
+            </div>
+            <p class="legal-card-text">
+              We are committed to digital accessibility, ensuring our online platforms conform to WCAG 2.1 Level AA benchmarks for all clients and assistive technologies.
+            </p>
+            <ul class="legal-card-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Full keyboard navigation &amp; skip-to-content links
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                High-contrast typography &amp; screen-reader aria labels
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Respect for prefers-reduced-motion preferences
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Brand & Tagline -->
+        <div class="footer-brand-col">
+          <a href="index.html#main-content" class="brand" aria-label="Haven and Crest Realty - Home">
+            Haven<span class="brand-ampersand">&amp;</span>Crest
+            <span class="brand-realty">Realty</span>
+          </a>
+          <p>
+            Curating extraordinary properties and bespoke real estate experiences across premier coastal and urban sanctuaries.
+          </p>
+          <div class="social-links-bar" aria-label="Haven and Crest Social Media">
+            <a href="https://instagram.com" class="social-link" aria-label="Haven & Crest on Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="social-link" aria-label="Haven & Crest on LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://x.com" class="social-link" aria-label="Haven & Crest on X" target="_blank" rel="noopener noreferrer">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="social-link" aria-label="Haven & Crest on Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="contact.html#contact-form" class="btn btn-primary btn-sm">Book a Viewing</a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Portfolio &amp; Agency</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#featured-properties">Featured Portfolio</a></li>
+            <li><a href="index.html#heroSearchForm">Property Search Filter</a></li>
+            <li><a href="index.html#why-us">Why Choose Us</a></li>
+            <li><a href="index.html#how-it-works">Advisory Methodology</a></li>
+            <li><a href="index.html#testimonials">Client Testimonials</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services & Advisory -->
+        <div>
+          <h4 class="footer-col-title">Services &amp; Advisory</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#services-detail">Core Capabilities</a></li>
+            <li><a href="services.html#timeline">Process Timeline</a></li>
+            <li><a href="services.html#engagement">Engagement Transparency</a></li>
+            <li><a href="services.html#faq">Frequently Asked Questions</a></li>
+            <li><a href="contact.html#advisory-team">Senior Advisory Partners</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Private Office & Journal -->
+        <div>
+          <h4 class="footer-col-title">Private Office</h4>
+          <ul class="footer-contact-items" style="margin-bottom: 1.5rem;">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <a href="contact.html#office-map" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;" title="View Beverly Hills flagship map and directions">
+                450 North Canon Drive<br>Beverly Hills, CA 90210
+              </a>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+              </svg>
+              <a href="tel:3108439200" style="color: inherit;">(310) 843-9200</a>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:concierge@havenandcrest.com" style="color: inherit;">concierge@havenandcrest.com</a>
+            </li>
+          </ul>
+
+          <h5 style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-gold); margin-bottom: 0.5rem;">
+            Private Journal
+          </h5>
+          <form class="newsletter-form" novalidate>
+            <input type="email" class="newsletter-input" placeholder="Your email address" aria-label="Email for private journal newsletter" required>
+            <button type="submit" class="btn btn-primary btn-sm" aria-label="Subscribe to newsletter">Join</button>
+          </form>
+          <div class="newsletter-feedback" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Haven &amp; Crest Realty LLC. All Rights Reserved. Equal Housing Opportunity.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html#privacy-policy">Privacy Policy</a>
+          <a href="contact.html#terms-of-representation">Terms of Representation</a>
+          <a href="contact.html#accessibility-statement">Accessibility Statement</a>
+          <a href="contact.html#office-map">Location &amp; Valet</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" aria-label="Scroll back to top of page">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Global Shared Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
