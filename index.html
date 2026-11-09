@@ -57,16 +57,51 @@
 
   <!-- Mobile Navigation Overlay -->
   <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="mobile-overlay-header">
+      <a href="index.html" class="brand" aria-label="Haven and Crest Realty - Home">
+        Haven<span class="brand-ampersand">&amp;</span>Crest
+        <span class="brand-realty">Realty</span>
+      </a>
+      <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
     <ul class="mobile-nav-list">
-      <li><a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a></li>
-      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
-      <li><a href="contact.html" class="mobile-nav-link">Contact Us</a></li>
+      <li class="mobile-nav-item">
+        <a href="index.html" class="mobile-nav-link active" aria-current="page">
+          <span>Home</span>
+          <span class="num">01</span>
+        </a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="services.html" class="mobile-nav-link">
+          <span>Services &amp; Advisory</span>
+          <span class="num">02</span>
+        </a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="#featured-properties" class="mobile-nav-link">
+          <span>Featured Portfolio</span>
+          <span class="num">03</span>
+        </a>
+      </li>
+      <li class="mobile-nav-item">
+        <a href="contact.html" class="mobile-nav-link">
+          <span>Contact Us</span>
+          <span class="num">04</span>
+        </a>
+      </li>
     </ul>
+
     <div class="mobile-contact-info">
-      <p>Private Advisory Concierge</p>
-      <a href="tel:3108439200">(310) 843-9200</a>
-      <p>450 North Canon Drive, Beverly Hills, CA</p>
-      <div style="margin-top: 1.5rem;">
+      <p style="text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.75rem; color: var(--color-gold);">Private Advisory Concierge</p>
+      <a href="tel:3108439200" style="font-size: 1.15rem; font-weight: 600;">(310) 843-9200</a>
+      <p>450 North Canon Drive, Beverly Hills, CA 90210</p>
+      <div style="margin-top: 1rem;">
         <a href="contact.html#contact-form" class="btn btn-primary btn-full">Book Private Viewing</a>
       </div>
     </div>
